@@ -9,7 +9,7 @@
 <div id="the whole thing" style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 
 <br/><br/>
@@ -24,7 +24,6 @@ File me [[https://github.com/dennyzhang/cheatsheet-knative-A4/issues][Issues]] o
 See more kubernetes from Denny: [[https://github.com/topics/denny-kubernetes][#denny-kubernetes]]
 
 - Query status
-
 | Name                        | Command                                                                                                           |
 |-----------------------------+-------------------------------------------------------------------------------------------------------------------|
 | List configurations         | =kubectl get configurations=                                                                                      |
@@ -34,7 +33,7 @@ See more kubernetes from Denny: [[https://github.com/topics/denny-kubernetes][#d
 | List all related pods       | watch "kubectl get pods -n istio-system; echo "\n"; kubectl get pods -n knative-serving"                          |
 | Get function domain name    | =kubectl get services.serving.knative.dev $conf_name -o=custom-columns=NAME:.metadata.name,DOMAIN:.status.domain= |
 | Get ingress gateway service | =kubectl get svc knative-ingressgateway -n istio-system=                                                          |
-
+[[https://cheatsheet.dennyzhang.com/cheatsheet-prometheus-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet-knative-A4/master/images/faas.png]]
 ** Typical Workloads in Functional-As-A-Service
 - web events
 - event-based integration
@@ -62,7 +61,7 @@ License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_lice
 
 <a href="https://www.linkedin.com/in/dennyzhang001"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
 <a href="https://github.com/dennyzhang"><img align="bottom"src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
-<a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img align="bottom" src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a>
+<a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a>
 #+END_HTML
 * Deploy knative on minikube                                       :noexport:
 ** basic use
